@@ -1,0 +1,363 @@
+[
+    {
+        "id": 1,
+        "marca": "Toyota",
+        "modelo": "Highlander",
+        "anio": 2021,
+        "asientos": 7,
+        "motor": "eléctrico",
+        "precio": 8387,
+        "diasalqui": 0
+    },
+    {
+        "id": 2,
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "anio": 2022,
+        "asientos": 7,
+        "motor": "híbrido",
+        "precio": 10735,
+        "diasalqui": 0
+    },
+    {
+        "id": 3,
+        "marca": "Toyota",
+        "modelo": "Suanse",
+        "anio": 2019,
+        "asientos": 5,
+        "motor": "nafta",
+        "precio": 10764,
+        "diasalqui": 0
+    },
+    {
+        "id": 4,
+        "marca": "Toyota",
+        "modelo": "Sienna",
+        "anio": 2022,
+        "asientos": 7,
+        "motor": "eléctrico",
+        "precio": 6882,
+        "diasalqui": 0
+    },
+    {
+        "id": 5,
+        "marca": "Honda",
+        "modelo": "Trusty",
+        "anio": 2019,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 7494,
+        "diasalqui": 0
+    },
+    {
+        "id": 6,
+        "marca": "Honda",
+        "modelo": "Pilot",
+        "anio": 2022,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 11000,
+        "diasalqui": 0
+    },
+    {
+        "id": 7,
+        "marca": "Honda",
+        "modelo": "Odyssey",
+        "anio": 2020,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 10992,
+        "diasalqui": 0
+    },
+    {
+        "id": 8,
+        "marca": "Honda",
+        "modelo": "Master",
+        "anio": 2023,
+        "asientos": 7,
+        "motor": "híbrido",
+        "precio": 8977,
+        "diasalqui": 0
+    },
+    {
+        "id": 9,
+        "marca": "Ford",
+        "modelo": "Explorer",
+        "anio": 2022,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 6718,
+        "diasalqui": 0
+    },
+    {
+        "id": 10,
+        "marca": "Ford",
+        "modelo": "Pathfinder",
+        "anio": 2020,
+        "asientos": 7,
+        "motor": "nafta",
+        "precio": 8191,
+        "diasalqui": 0
+    },
+    {
+        "id": 11,
+        "marca": "Ford",
+        "modelo": "Flex",
+        "anio": 2020,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 6487,
+        "diasalqui": 0
+    },
+    {
+        "id": 12,
+        "marca": "Ford",
+        "modelo": "Bronco",
+        "anio": 2024,
+        "asientos": 5,
+        "motor": "híbrido",
+        "precio": 7992,
+        "diasalqui": 0
+    },
+    {
+        "id": 13,
+        "marca": "Chevrolet",
+        "modelo": "Traverse",
+        "anio": 2024,
+        "asientos": 7,
+        "motor": "híbrido",
+        "precio": 8642,
+        "diasalqui": 0
+    },
+    {
+        "id": 14,
+        "marca": "Chevrolet",
+        "modelo": "Onix",
+        "anio": 2023,
+        "asientos": 7,
+        "motor": "eléctrico",
+        "precio": 6780,
+        "diasalqui": 0
+    },
+    {
+        "id": 15,
+        "marca": "Chevrolet",
+        "modelo": "Tahoe",
+        "anio": 2022,
+        "asientos": 7,
+        "motor": "eléctrico",
+        "precio": 6686,
+        "diasalqui": 0
+    },
+    {
+        "id": 16,
+        "marca": "Chevrolet",
+        "modelo": "Cruze",
+        "anio": 2019,
+        "asientos": 5,
+        "motor": "nafta",
+        "precio": 8004,
+        "diasalqui": 0
+    },
+    {
+        "id": 17,
+        "marca": "Nissan",
+        "modelo": "Legacy",
+        "anio": 2018,
+        "asientos": 5,
+        "motor": "híbrido",
+        "precio": 11491,
+        "diasalqui": 0
+    },
+    {
+        "id": 18,
+        "marca": "Nissan",
+        "modelo": "Murano",
+        "anio": 2024,
+        "asientos": 5,
+        "motor": "nafta",
+        "precio": 10080,
+        "diasalqui": 0
+    },
+    {
+        "id": 19,
+        "marca": "Nissan",
+        "modelo": "Armada",
+        "anio": 2019,
+        "asientos": 5,
+        "motor": "nafta",
+        "precio": 10484,
+        "diasalqui": 0
+    },
+    {
+        "id": 20,
+        "marca": "Nissan",
+        "modelo": "Morocco",
+        "anio": 2020,
+        "asientos": 7,
+        "motor": "híbrido",
+        "precio": 8736,
+        "diasalqui": 0
+    },
+    {
+        "id": 21,
+        "marca": "Kia",
+        "modelo": "Sorento",
+        "anio": 2022,
+        "asientos": 7,
+        "motor": "híbrido",
+        "precio": 10725,
+        "diasalqui": 0
+    },
+    {
+        "id": 22,
+        "marca": "Kia",
+        "modelo": "Kovashu",
+        "anio": 2020,
+        "asientos": 7,
+        "motor": "eléctrico",
+        "precio": 7073,
+        "diasalqui": 0
+    },
+    {
+        "id": 23,
+        "marca": "Kia",
+        "modelo": "Carnival",
+        "anio": 2024,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 7991,
+        "diasalqui": 0
+    },
+    {
+        "id": 24,
+        "marca": "Kia",
+        "modelo": "Cramble",
+        "anio": 2020,
+        "asientos": 5,
+        "motor": "híbrido",
+        "precio": 6748,
+        "diasalqui": 0
+    },
+    {
+        "id": 25,
+        "marca": "Hyundai",
+        "modelo": "Entourage",
+        "anio": 2021,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 10265,
+        "diasalqui": 0
+    },
+    {
+        "id": 26,
+        "marca": "Hyundai",
+        "modelo": "Palisade",
+        "anio": 2019,
+        "asientos": 7,
+        "motor": "eléctrico",
+        "precio": 7293,
+        "diasalqui": 0
+    },
+    {
+        "id": 27,
+        "marca": "Hyundai",
+        "modelo": "Amonio",
+        "anio": 2018,
+        "asientos": 5,
+        "motor": "nafta",
+        "precio": 11253,
+        "diasalqui": 0
+    },
+    {
+        "id": 28,
+        "marca": "Hyundai",
+        "modelo": "Santa Fe",
+        "anio": 2024,
+        "asientos": 7,
+        "motor": "nafta",
+        "precio": 11489,
+        "diasalqui": 0
+    },
+    {
+        "id": 29,
+        "marca": "Volkswagen",
+        "modelo": "Atlas",
+        "anio": 2023,
+        "asientos": 5,
+        "motor": "naftero",
+        "precio": 6862,
+        "diasalqui": 0
+    },
+    {
+        "id": 30,
+        "marca": "Volkswagen",
+        "modelo": "Sirocco",
+        "anio": 2019,
+        "asientos": 2,
+        "motor": "eléctrico",
+        "precio": 80881,
+        "diasalqui": 0
+    },
+    {
+        "id": 31,
+        "marca": "Volkswagen",
+        "modelo": "Tiguan",
+        "anio": 2019,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 10763,
+        "diasalqui": 0
+    },
+    {
+        "id": 32,
+        "marca": "Volkswagen",
+        "modelo": "Taos",
+        "anio": 2024,
+        "asientos": 5,
+        "motor": "nafta",
+        "precio": 8558,
+        "diasalqui": 0
+    },
+    {
+        "id": 33,
+        "marca": "Subaru",
+        "modelo": "Ascent",
+        "anio": 2019,
+        "asientos": 7,
+        "motor": "nafta",
+        "precio": 9300,
+        "diasalqui": 0
+    },
+    {
+        "id": 34,
+        "marca": "Mercedes Benz",
+        "modelo": "M300",
+        "anio": 2019,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 10763,
+        "diasalqui": 0
+    },
+    {
+        "id": 35,
+        "marca": "Audi",
+        "modelo": "A4",
+        "anio": 2024,
+        "asientos": 5,
+        "motor": "nafta",
+        "precio": 8558,
+        "diasalqui": 0
+    },
+    {
+        "id": 36,
+        "marca": "Audi",
+        "modelo": "A6",
+        "anio": 2019,
+        "asientos": 7,
+        "motor": "nafta",
+        "precio": 9300,
+        "diasalqui": 0
+    }
+]
+    

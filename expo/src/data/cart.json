@@ -1,0 +1,29 @@
+[
+    {
+        "id": 2,
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "anio": 2022,
+        "asientos": 7,
+        "motor": "híbrido",
+        "precio": 10735
+    },
+    {
+        "id": 5,
+        "marca": "Honda",
+        "modelo": "Trusty",
+        "anio": 2019,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 7494
+    },
+    {
+        "id": 11,
+        "marca": "Ford",
+        "modelo": "Flex",
+        "anio": 2020,
+        "asientos": 5,
+        "motor": "eléctrico",
+        "precio": 6487
+    }
+]

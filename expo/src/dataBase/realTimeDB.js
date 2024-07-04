@@ -1,0 +1,1 @@
+export const baseUrl = "https://appcoder-fc878-default-rtdb.firebaseio.com/";
