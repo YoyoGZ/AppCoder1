@@ -10,9 +10,13 @@ import { useDispatch, useSelector } from "react-redux";
 const Counter = () => {
 
   const count = useSelector((state)=> state.counter.value)
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const [inputToAdd, setInputToAdd] = useState(null);
   
+  const handleChange = (value) => {
+    dispatch(setCounter(Number(value)));
+  };
+
   return (
     <View style={styles.container}>
         <Text> Cantidad de dias a alquilar el vehículo </Text>
@@ -27,16 +31,16 @@ const Counter = () => {
         </View>
         <View style={styles.buttonsContainer}>
           <TextInput
-            placeholder="Ingresar cantidad de dias"
+            placeholder="Sume o reste cantidad"
             style={styles.spanInput}
-            onChangeText={setInputToAdd}
             value={inputToAdd}
+            onChangeText={setInputToAdd}
           />
           <Pressable
             style={styles.button}
             onPress={() => dispatch(incrementByAmount(Number(inputToAdd)))}
           >
-            <Text style={styles.buttonText}>Add</Text>
+            <Text style={styles.buttonText}>Ingrese Cantidad</Text>
           </Pressable>
         </View>
           <Pressable style={styles.button} onPress={() => dispatch(reset())}>

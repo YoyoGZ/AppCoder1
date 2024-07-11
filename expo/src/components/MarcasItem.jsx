@@ -12,8 +12,6 @@ const MarcasItem = ({ marca, navigation}) => {
     navigation.navigate('ItemListMarcas', {marca})
 };
 
-
-
   return (
     <Card style={styles.cardContainer}>
       <Pressable onPress={handleNavigate}>

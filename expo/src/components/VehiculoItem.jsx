@@ -19,8 +19,7 @@ const VehiculoItem = ({
   return (
     <Card style={styles.additionalStylesCard}>
       <Pressable style={styles.pressable}
-        onPress= {handleNavigate}        
-      >
+        onPress= {handleNavigate} >
         <Text style={styles.textVehiculo}> {vehiculo.modelo} </Text>
       </Pressable>    
     </Card>  

@@ -9,6 +9,9 @@ export const cartSlice = createSlice({
       total: null,
       items: [],
     },
+    counter: {
+      value: 0,
+    },
   },
   reducers: {
     addCartItem: (state, { payload }) => {
@@ -16,10 +19,10 @@ export const cartSlice = createSlice({
         (item) => item.id === payload.id
       );
       if (vehiculoRepeated) {
-        console.log(vehiculoRepeated);
+        // console.log(vehiculoRepeated);
         const itemsUpdated = state.value.items.map((item) => {
           if (item.id === payload.id) {
-            item.anio += payload.asientos;
+            item.asientos += payload.asientos;
             return item;
           }
           return item;

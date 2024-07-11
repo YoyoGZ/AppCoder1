@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useSelector} from "react";
 
 import {
   Button,
@@ -7,38 +7,34 @@ import {
   Text,
   View,
   useWindowDimensions,} from "react-native";
-
-// import totVehiculos from "../data/vehiculos.json";
 import Counter from "../components/Counter";
 import { useGetVehicByIdQuery } from "../services/shopServices";
 import { useDispatch } from "react-redux";
 import { addCartItem } from "../features/Cart/CartSlice";
 
 const ItemDetail = ({ route, navigation }) => {
-
-  
-  
   const {width, height} = useWindowDimensions()  
   const [orientation, setOrientation] = useState("portrait");
-  // const [vehiculo, setVehiculo] = useState(null);
   const {vhId: idSelected} = route.params
   const dispatch = useDispatch();
   
-  const { data : vehiculo} = useGetVehicByIdQuery (idSelected);
-
-  // Landscape: es posición Horizontal del device
-  // Portraint: es posición  Vertical del device
+  const { data : vehiculo } = useGetVehicByIdQuery (idSelected);
+  const diasalqui = useSelector((state) => state.counter.value);
 
   useEffect(()=>{
     if(width > height) setOrientation("landscape")
     else setOrientation('portrait')
   }, [width, height]);
 
+  // const handleAddCart = () => {
+  //   dispatch(addCartItem)
+  //   dispatch(addCartItem({ ...vehiculo, diasalqui : 1}))
+  // };
   const handleAddCart = () => {
-    dispatch(addCartItem)
-    dispatch(addCartItem({ ...vehiculo}))
-
-  }
+    if (vehiculo) {
+      dispatch(addCartItem({ ...vehiculo, diasalqui }));
+    }
+  };
 
 
   return (

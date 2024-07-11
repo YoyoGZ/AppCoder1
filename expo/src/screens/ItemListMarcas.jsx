@@ -3,36 +3,34 @@ import { useEffect, useState } from 'react';
 
 import { colors } from '../global/colors';
 import Search from '../components/Search';
-import vehiculos from '../data/vehiculos.json'
+// import vehiculos from '../data/vehiculos.json'
 import VehiculoItem from '../components/VehiculoItem';
-import { useGetVehicByMarcaQuery } from '../services/shopServices';
+import { useGetVehicsByMarcaQuery } from '../services/shopServices';
 
 const ItemListMarcas = ({navigation, route}) => {  
     const [keyWord, setKeyword] = useState('');
     const [vehiculosFiltered, setVehiculosFiltered] = useState([]);
     const [error, setError] = useState("");
-
     const { marca : marcaSelected } = route.params;
 
-    const { data : vehicsFetched, error : errorFetched, isLoading } =  useGetVehicByMarcaQuery (marcaSelected);
+    const { data : vehicsFetched, error : errorFetched, isLoading } =  useGetVehicsByMarcaQuery (marcaSelected);
+    console.log(vehicsFetched)
 
-    useEffect(() => {
+  useEffect(() => {
     const regexDigits= /\d/
     const hasDigits = (regexDigits.test(keyWord));
     if(hasDigits) {
       setError("Don't use digits")
       return;
-    }
-
-    // const vehiculosPreFiltered = vehiculos.filter(
-    //   (vehiculo) => vehiculo.marca === marcaSelected);
+    };
 
     if (!isLoading) {
-       const vehiculosFilter = vehicsFetched.filter(
-        (vehiculo) => vehiculo.marca.toLocaleLowerCase().includes(keyWord.toLocaleLowerCase()));
+      const vehiculosFilter = vehicsFetched.filter((vehiculo) =>
+         vehiculo.marca.toLocaleLowerCase().includes(keyWord.toLocaleLowerCase()));
       setVehiculosFiltered(vehiculosFilter);
-      setError('')
-     }    
+      setError('');
+    }
+
   }, [keyWord, marcaSelected, vehicsFetched, isLoading])
 
   return (

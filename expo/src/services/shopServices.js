@@ -8,23 +8,36 @@ export const shopApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: baseUrl}),
     endpoints: (builder) => ({
         getMarcas: builder.query({
-            query: () => 'marcas.json',
+            query: () => 'Marcas.json',
         }),
-        getVehicByMarca: builder.query({
-            query: (marcas) => `vehiculos.json?orderBy="marcas"&equalTo="${marcas}" `,
+        getVehicsByMarca: builder.query({
+            query: (marca) =>
+              `vehiculos.json?orderBy="marca"&equalTo="${marca}"`,
             transformResponse: (resp) => {
-                const transfResp = Object.values(resp)
-                return transfResp;
+              const transfResp = Object.values(resp);
+              return transfResp;
             },
         }),
         getVehicById: builder.query({
-            query: (vehId) => ` vehiculos.json?orderBy="id"&equalTo=${vehId} `,
+            query: (vehId) => 
+                `vehiculos.json?orderBy="id"&equalTo=${vehId}`,
             transformResponse: (resp) => {
                 const transfResp = Object.values(resp)
-                if (transfResp.length) return transfResp[0]
+                if (transfResp.length) return transfResp[0];
             },
+        }),
+        postOrder: builder.mutation({
+            query: ({ ...order }) => ({
+              url: "order.json",
+              method: "POST",
+              body: order,
+            }),
         }),
     }),
 });
 
-export const {useGetMarcasQuery, useGetVehicByMarcaQuery, useGetVehicByIdQuery} = shopApi;
+export const {useGetMarcasQuery,
+    useGetVehicsByMarcaQuery, 
+    useGetVehicByIdQuery,
+    usePostOrderMutation,
+} = shopApi;
