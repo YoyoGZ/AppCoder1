@@ -4,15 +4,29 @@ import { colors } from "../global/colors";
 
 import InputForm from "../components/InputForm";
 import SubmitButton from "../components/SubmitButton.jsx";
+import { useSignInMutation } from "../services/authService.js";
 
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
+  const [ triggerSignIn, result] =  useSignInMutation()
+
+  useEffect(()=> {
+    if (result.isSuccess) {
+      dispatch(
+        setUser({
+          email: result.data.email,
+          idToken: result.data.idToken,
+          localId: result.data.localId,
+        })
+      );
+    }
+  }, [result])
 
   const onSubmit = ()=> {
-    //login
+    triggerSignIn({email, password, returnSecureToken: true})
   }
 
   return (
@@ -20,15 +34,13 @@ const Login = ({ navigation }) => {
       <View style={styles.main}>
         <View style={styles.container}>
           <Text style={styles.title}>Login to start</Text>
-          <form>
             <InputForm label={"email"} onChange={setEmail} error={""} />         
-            <InputForm
-              label={"password"}
-              onChange={setPassword}
-              error={""}
-              isSecure={true}
-            />
-          </form>
+              <InputForm
+                label={"password"}
+                onChange={setPassword}
+                error={""}
+                isSecure={true}
+              />
           <SubmitButton onPress={onSubmit} title="Send" />
           <Text style={styles.sub}>Not have an account?</Text>         
           <Pressable onPress={() => navigation.navigate("Signup")}>

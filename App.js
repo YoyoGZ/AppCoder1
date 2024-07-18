@@ -1,8 +1,8 @@
 import { StyleSheet, SafeAreaView, StatusBar, Platform } from 'react-native';
 import { useFonts } from 'expo-font'
-import {colors} from './.expo/src/global/colors'
-import Navigator from './.expo/src/navigation/Navigator';
-import store from './.expo/src/store';
+import {colors} from './expo/src/global/colors'
+import Navigator from './expo/src/navigation/Navigator';
+import store from './expo/src/store';
 
 import { Provider } from 'react-redux';
 export default function App() {
@@ -37,6 +37,5 @@ const styles = StyleSheet.create({
     fontSize: 6,
     color: colors.black,
     fontWeight: 600,
-
   },
 });

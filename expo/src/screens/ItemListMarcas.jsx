@@ -14,7 +14,7 @@ const ItemListMarcas = ({navigation, route}) => {
     const { marca : marcaSelected } = route.params;
 
     const { data : vehicsFetched, error : errorFetched, isLoading } =  useGetVehicsByMarcaQuery (marcaSelected);
-    console.log(vehicsFetched)
+    // console.log(vehicsFetched)
 
   useEffect(() => {
     const regexDigits= /\d/

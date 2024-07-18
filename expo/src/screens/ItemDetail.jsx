@@ -19,7 +19,7 @@ const ItemDetail = ({ route, navigation }) => {
   const dispatch = useDispatch();
   
   const { data : vehiculo } = useGetVehicByIdQuery (idSelected);
-  const diasalqui = useSelector((state) => state.counter.value);
+  // const diasalqui = useSelector((state) => state.counter.value);
 
   useEffect(()=>{
     if(width > height) setOrientation("landscape")
@@ -32,7 +32,7 @@ const ItemDetail = ({ route, navigation }) => {
   // };
   const handleAddCart = () => {
     if (vehiculo) {
-      dispatch(addCartItem({ ...vehiculo, diasalqui }));
+      dispatch(addCartItem({ ...vehiculo}));
     }
   };
 

@@ -5,6 +5,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import HomeStackNavigator from './HomeStackNavigator';
 import CartStackNavigator from './CartStackNavigator';
 import OrderStackNavigator from './OrderStackNavigator';
+import ProfilesStackNavigator from './ProfilesStackNavigator';
 import Header from '../components/Header'
 import { colors } from '../global/colors';
 
@@ -60,6 +61,21 @@ const BottomTabNavigator = () => {
               <View>
                 <FontAwesome5 
                   name="receipt"
+                  size={24} color={ focused ?"black" : colors.lightblue} />
+              </View>
+            )
+          }
+        }} 
+      />
+      <Tab.Screen 
+        name='Profile' 
+        component={ProfilesStackNavigator}
+        options= {{
+          tabBarIcon : ({focused}) => {
+            return (
+              <View>
+                <FontAwesome5 
+                  name="user"
                   size={24} color={ focused ?"black" : colors.lightblue} />
               </View>
             )

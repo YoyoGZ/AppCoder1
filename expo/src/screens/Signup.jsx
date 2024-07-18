@@ -6,6 +6,7 @@ import InputForm from "../components/InputForm";
 import { useSignUpMutation } from "../services/authService";
 import { useDispatch } from "react-redux";
 import { setUser } from "../features/User/UserSlice";
+import { signupSchema } from "../validations/signUpScheme.js";
 
 
 
@@ -20,23 +21,43 @@ const Signup = ({ navigation }) => {
   const dispatch = useDispatch()
   const [triggerSignUp, result] = useSignUpMutation()
 
-  // useEffect(()=>{
-  //   if(result.isSuccess) {
-  //     dispatch(
-  //       setUser({
-  //         email: result.data.email,
-  //         idToken: result.data.idToken
-  //       })
-  //     )
-  //   }
-  // }, [result])
+  useEffect(()=>{
+    if(result.isSuccess) {
+      dispatch(
+        setUser({
+          email: result.data.email,
+          idToken: result.data.idToken,
+          localId: result.data.localId,
+        })
+      )
+    }
+  }, [result])
 
   const onSubmit = () => {
-    // logica de registro
-    triggerSignUp({email, password, returnSecureToken: true})
-  }
+    try {
+      setErrorMail("");
+      setErrorPassword("");
+      setErrorConfirmPassword("");
+      signupSchema.validateSync({ email, password, confirmPassword })
+      triggerSignUp({ email, password, returnSecureToken: true })
+    
+    } catch (err) {
+      console.log("Entro al signup del error");
+      console.log(err.path);
+      console.log(err.message);
+      switch (err.path) {
+        case "email":
+          setErrorMail(err.message);
+        case "password":
+          setErrorPassword(err.message);
+        case "confirmPassword":
+          setErrorConfirmPassword(err.message);
+        default:
+          break;
+      }
+    }
+  };
 
-  //console.log(result)
 
   return (
       <View style={styles.main}>
