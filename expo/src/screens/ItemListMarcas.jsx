@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 import { colors } from '../global/colors';
 import Search from '../components/Search';
-// import vehiculos from '../data/vehiculos.json'
 import VehiculoItem from '../components/VehiculoItem';
 import { useGetVehicsByMarcaQuery } from '../services/shopServices';
 
@@ -12,9 +11,7 @@ const ItemListMarcas = ({navigation, route}) => {
     const [vehiculosFiltered, setVehiculosFiltered] = useState([]);
     const [error, setError] = useState("");
     const { marca : marcaSelected } = route.params;
-
     const { data : vehicsFetched, error : errorFetched, isLoading } =  useGetVehicsByMarcaQuery (marcaSelected);
-    // console.log(vehicsFetched)
 
   useEffect(() => {
     const regexDigits= /\d/

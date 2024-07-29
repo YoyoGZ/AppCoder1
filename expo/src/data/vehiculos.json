@@ -6,8 +6,7 @@
         "anio": 2021,
         "asientos": 7,
         "motor": "eléctrico",
-        "precio": 8387,
-        "diasalqui": 0
+        "precio": 8387
     },
     {
         "id": 2,
@@ -16,8 +15,7 @@
         "anio": 2022,
         "asientos": 7,
         "motor": "híbrido",
-        "precio": 10735,
-        "diasalqui": 0
+        "precio": 10735
     },
     {
         "id": 3,
@@ -26,8 +24,7 @@
         "anio": 2019,
         "asientos": 5,
         "motor": "nafta",
-        "precio": 10764,
-        "diasalqui": 0
+        "precio": 10764
     },
     {
         "id": 4,
@@ -36,8 +33,7 @@
         "anio": 2022,
         "asientos": 7,
         "motor": "eléctrico",
-        "precio": 6882,
-        "diasalqui": 0
+        "precio": 6968
     },
     {
         "id": 5,
@@ -46,8 +42,7 @@
         "anio": 2019,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 7494,
-        "diasalqui": 0
+        "precio": 7494      
     },
     {
         "id": 6,
@@ -56,8 +51,7 @@
         "anio": 2022,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 11000,
-        "diasalqui": 0
+        "precio": 11000
     },
     {
         "id": 7,
@@ -66,8 +60,7 @@
         "anio": 2020,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 10992,
-        "diasalqui": 0
+        "precio": 10992
     },
     {
         "id": 8,
@@ -76,8 +69,7 @@
         "anio": 2023,
         "asientos": 7,
         "motor": "híbrido",
-        "precio": 8977,
-        "diasalqui": 0
+        "precio": 8977
     },
     {
         "id": 9,
@@ -86,8 +78,7 @@
         "anio": 2022,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 6718,
-        "diasalqui": 0
+        "precio": 6718
     },
     {
         "id": 10,
@@ -96,8 +87,7 @@
         "anio": 2020,
         "asientos": 7,
         "motor": "nafta",
-        "precio": 8191,
-        "diasalqui": 0
+        "precio": 8191
     },
     {
         "id": 11,
@@ -106,8 +96,7 @@
         "anio": 2020,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 6487,
-        "diasalqui": 0
+        "precio": 6487
     },
     {
         "id": 12,
@@ -116,8 +105,7 @@
         "anio": 2024,
         "asientos": 5,
         "motor": "híbrido",
-        "precio": 7992,
-        "diasalqui": 0
+        "precio": 7992
     },
     {
         "id": 13,
@@ -126,8 +114,7 @@
         "anio": 2024,
         "asientos": 7,
         "motor": "híbrido",
-        "precio": 8642,
-        "diasalqui": 0
+        "precio": 8642
     },
     {
         "id": 14,
@@ -136,8 +123,7 @@
         "anio": 2023,
         "asientos": 7,
         "motor": "eléctrico",
-        "precio": 6780,
-        "diasalqui": 0
+        "precio": 6780
     },
     {
         "id": 15,
@@ -146,8 +132,7 @@
         "anio": 2022,
         "asientos": 7,
         "motor": "eléctrico",
-        "precio": 6686,
-        "diasalqui": 0
+        "precio": 6686
     },
     {
         "id": 16,
@@ -156,8 +141,7 @@
         "anio": 2019,
         "asientos": 5,
         "motor": "nafta",
-        "precio": 8004,
-        "diasalqui": 0
+        "precio": 8004
     },
     {
         "id": 17,
@@ -166,8 +150,7 @@
         "anio": 2018,
         "asientos": 5,
         "motor": "híbrido",
-        "precio": 11491,
-        "diasalqui": 0
+        "precio": 11491
     },
     {
         "id": 18,
@@ -176,8 +159,7 @@
         "anio": 2024,
         "asientos": 5,
         "motor": "nafta",
-        "precio": 10080,
-        "diasalqui": 0
+        "precio": 10080
     },
     {
         "id": 19,
@@ -186,8 +168,7 @@
         "anio": 2019,
         "asientos": 5,
         "motor": "nafta",
-        "precio": 10484,
-        "diasalqui": 0
+        "precio": 10484
     },
     {
         "id": 20,
@@ -196,8 +177,7 @@
         "anio": 2020,
         "asientos": 7,
         "motor": "híbrido",
-        "precio": 8736,
-        "diasalqui": 0
+        "precio": 8736
     },
     {
         "id": 21,
@@ -206,8 +186,7 @@
         "anio": 2022,
         "asientos": 7,
         "motor": "híbrido",
-        "precio": 10725,
-        "diasalqui": 0
+        "precio": 10725
     },
     {
         "id": 22,
@@ -216,8 +195,7 @@
         "anio": 2020,
         "asientos": 7,
         "motor": "eléctrico",
-        "precio": 7073,
-        "diasalqui": 0
+        "precio": 7073
     },
     {
         "id": 23,
@@ -226,8 +204,7 @@
         "anio": 2024,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 7991,
-        "diasalqui": 0
+        "precio": 7991
     },
     {
         "id": 24,
@@ -236,8 +213,7 @@
         "anio": 2020,
         "asientos": 5,
         "motor": "híbrido",
-        "precio": 6748,
-        "diasalqui": 0
+        "precio": 6748
     },
     {
         "id": 25,
@@ -246,8 +222,7 @@
         "anio": 2021,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 10265,
-        "diasalqui": 0
+        "precio": 10265
     },
     {
         "id": 26,
@@ -256,8 +231,7 @@
         "anio": 2019,
         "asientos": 7,
         "motor": "eléctrico",
-        "precio": 7293,
-        "diasalqui": 0
+        "precio": 7293
     },
     {
         "id": 27,
@@ -266,8 +240,7 @@
         "anio": 2018,
         "asientos": 5,
         "motor": "nafta",
-        "precio": 11253,
-        "diasalqui": 0
+        "precio": 11253
     },
     {
         "id": 28,
@@ -276,8 +249,7 @@
         "anio": 2024,
         "asientos": 7,
         "motor": "nafta",
-        "precio": 11489,
-        "diasalqui": 0
+        "precio": 11489
     },
     {
         "id": 29,
@@ -286,8 +258,7 @@
         "anio": 2023,
         "asientos": 5,
         "motor": "naftero",
-        "precio": 6862,
-        "diasalqui": 0
+        "precio": 6862
     },
     {
         "id": 30,
@@ -296,8 +267,7 @@
         "anio": 2019,
         "asientos": 2,
         "motor": "eléctrico",
-        "precio": 80881,
-        "diasalqui": 0
+        "precio": 80881
     },
     {
         "id": 31,
@@ -306,8 +276,7 @@
         "anio": 2019,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 10763,
-        "diasalqui": 0
+        "precio": 10763
     },
     {
         "id": 32,
@@ -316,8 +285,7 @@
         "anio": 2024,
         "asientos": 5,
         "motor": "nafta",
-        "precio": 8558,
-        "diasalqui": 0
+        "precio": 8558
     },
     {
         "id": 33,
@@ -326,8 +294,7 @@
         "anio": 2019,
         "asientos": 7,
         "motor": "nafta",
-        "precio": 9300,
-        "diasalqui": 0
+        "precio": 9300
     },
     {
         "id": 34,
@@ -336,8 +303,7 @@
         "anio": 2019,
         "asientos": 5,
         "motor": "eléctrico",
-        "precio": 10763,
-        "diasalqui": 0
+        "precio": 10763
     },
     {
         "id": 35,
@@ -346,8 +312,7 @@
         "anio": 2024,
         "asientos": 5,
         "motor": "nafta",
-        "precio": 8558,
-        "diasalqui": 0
+        "precio": 8558
     },
     {
         "id": 36,
@@ -356,8 +321,7 @@
         "anio": 2019,
         "asientos": 7,
         "motor": "nafta",
-        "precio": 9300,
-        "diasalqui": 0
+        "precio": 9300
     }
 ]
     

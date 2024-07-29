@@ -5,12 +5,14 @@ import { colors } from "../global/colors";
 import InputForm from "../components/InputForm";
 import SubmitButton from "../components/SubmitButton.jsx";
 import { useSignInMutation } from "../services/authService.js";
+import { useDispatch } from "react-redux";
+import { setUser } from "../features/User/UserSlice.js";
 
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
+  const dispatch = useDispatch()
   const [ triggerSignIn, result] =  useSignInMutation()
 
   useEffect(()=> {
@@ -30,7 +32,6 @@ const Login = ({ navigation }) => {
   }
 
   return (
-    
       <View style={styles.main}>
         <View style={styles.container}>
           <Text style={styles.title}>Login to start</Text>
@@ -48,7 +49,6 @@ const Login = ({ navigation }) => {
           </Pressable>
         </View>
       </View>
-    
   );
 };
 
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: colors.blue100,
     gap: 15,
-    paddingVertical: 30,
+    paddingVertical: 80,
     borderRadius: 10,
   },
   title: {
@@ -76,11 +76,11 @@ const styles = StyleSheet.create({
     fontFamily: "Nunito",
   },
   sub: {
-    fontSize: 14,
+    fontSize: 18,
     color: colors.black,
   },
   subLink: {
-    fontSize: 14,
+    fontSize: 18,
     color: colors.lightblue,
   },
 });

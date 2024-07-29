@@ -3,7 +3,7 @@ import Card from './Card';
 import { colors } from '../global/colors';
 import { setMarcaSelected } from '../features/Shop/ShopSlice';
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 
 const MarcasItem = ({ marca, navigation}) => {
   const dispatch = useDispatch()

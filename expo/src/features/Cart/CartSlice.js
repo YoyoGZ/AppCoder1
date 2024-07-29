@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { useSelector } from "react-redux";
 
 export const cartSlice = createSlice({
   name: "cart",
@@ -6,12 +7,9 @@ export const cartSlice = createSlice({
     value: {
       user: "userIdLogged",
       updatedAt: new Date().toLocaleString(),
-      total: null,
+      total: 0,
       items: [],
-    },
-    counter: {
-      value: 0,
-    },
+    }
   },
   reducers: {
     addCartItem: (state, { payload }) => {
@@ -19,7 +17,6 @@ export const cartSlice = createSlice({
         (item) => item.id === payload.id
       );
       if (vehiculoRepeated) {
-        // console.log(vehiculoRepeated);
         const itemsUpdated = state.value.items.map((item) => {
           if (item.id === payload.id) {
             item.asientos += payload.asientos;
@@ -29,7 +26,7 @@ export const cartSlice = createSlice({
         });
         const total = itemsUpdated.reduce(
           (acc, currentItem) =>
-            (acc += currentItem.precio * state.counter.value),
+            (acc += currentItem.precio),
           0
         );
         state.value = {
@@ -42,7 +39,7 @@ export const cartSlice = createSlice({
         state.value.items.push(payload);
         const total = state.value.items.reduce(
           (acc, currentItem) =>
-            (acc += currentItem.precio * state.counter.value),
+            (acc += currentItem.precio),
           0
         );
         state.value = {

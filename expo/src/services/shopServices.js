@@ -1,14 +1,14 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { baseUrl } from "../dataBase/realTimeDB";
 
-
 export const shopApi = createApi({
     reducerPath: "shopApi",
     baseQuery: fetchBaseQuery({ baseUrl: baseUrl}),
     tagTypes: ['profileImageGet'],
+    
     endpoints: (builder) => ({
         getMarcas: builder.query({
-            query: () => 'Marcas.json',
+            query: () => 'marcas.json',
         }),
         getVehicsByMarca: builder.query({
             query: (marca) =>

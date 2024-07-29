@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     width: "60%",
   },
   text: {
-    color: colors.gray100,
+    color: colors.black,
     fontFamily: "Nunito",
     fontSize: 22,
   },

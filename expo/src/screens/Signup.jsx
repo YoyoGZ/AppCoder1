@@ -9,7 +9,6 @@ import { setUser } from "../features/User/UserSlice";
 import { signupSchema } from "../validations/signUpScheme.js";
 
 
-
 const Signup = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [errorMail, setErrorMail] = useState("");
@@ -42,9 +41,9 @@ const Signup = ({ navigation }) => {
       triggerSignUp({ email, password, returnSecureToken: true })
     
     } catch (err) {
-      console.log("Entro al signup del error");
-      console.log(err.path);
-      console.log(err.message);
+      // console.log("Entro al signup del error");
+      // console.log(err.path);
+      // console.log(err.message);
       switch (err.path) {
         case "email":
           setErrorMail(err.message);
@@ -63,25 +62,23 @@ const Signup = ({ navigation }) => {
       <View style={styles.main}>
         <View style={styles.container}>
           <Text style={styles.title}>Signup</Text>
-          <form>
             <InputForm 
-                label={"email"} 
-                onChange={setEmail} 
-                error={errorMail} 
+              label={"Email"} 
+              onChange={setEmail} 
+              error={errorMail} 
             />
             <InputForm
-              label={"password"}
+              label={"Password"}
               onChange={setPassword}
               error={errorPassword}
               isSecure={true}
             />
             <InputForm
-              label={"confirm password"}
+              label={"Confirm Password"}
               onChange={setconfirmPassword}
               error={errorConfirmPassword}
               isSecure={true}
             />
-          </form>
           <SubmitButton onPress={onSubmit} title="Send" />
           <Text style={styles.sub}>Already have an account?</Text>
           <Pressable onPress={() => navigation.navigate("Login")}>

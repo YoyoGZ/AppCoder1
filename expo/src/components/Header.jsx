@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   text:{
-    fontSize: 35,
+    fontSize: 30,
     fontWeight: 600,
     fontFamily: 'Nunito'
   }

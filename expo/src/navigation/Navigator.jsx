@@ -12,6 +12,6 @@ const Navigator = () => {
       {user ? <BottomTabNavigator /> : <AuthStackNavigator />}
     </NavigationContainer>
   )
-}
+};
 
 export default Navigator

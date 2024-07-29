@@ -23,7 +23,7 @@ const BottomTabNavigator = () => {
       })}
     >
       <Tab.Screen 
-        name='Shop' 
+        name='Marcas Disponibles'
         component={HomeStackNavigator}
         options= {{
           tabBarIcon : ({focused}) => {
@@ -31,7 +31,8 @@ const BottomTabNavigator = () => {
               <View>
                 <FontAwesome5 
                   name="store" 
-                  size={24} color={ focused ?"black" : colors.lightblue} />
+                  size={24} 
+                  color={ focused ?"black" : colors.lightblue} />
               </View>
             )
           }
@@ -46,14 +47,15 @@ const BottomTabNavigator = () => {
               <View>
                 <FontAwesome5 
                   name="shopping-cart" 
-                  size={24} color={ focused ?"black" : colors.lightblue} />
+                  size={24} 
+                  color={ focused ?"black" : colors.lightblue} />
               </View>
             )
           }
         }} 
      />
       <Tab.Screen 
-        name='Order' 
+        name='Orden de Compra' 
         component={OrderStackNavigator}
         options= {{
           tabBarIcon : ({focused}) => {
@@ -61,14 +63,15 @@ const BottomTabNavigator = () => {
               <View>
                 <FontAwesome5 
                   name="receipt"
-                  size={24} color={ focused ?"black" : colors.lightblue} />
+                  size={24} 
+                  color={ focused ?"black" : colors.lightblue} />
               </View>
             )
           }
         }} 
       />
       <Tab.Screen 
-        name='Profile' 
+        name='Perfil de Usuario' 
         component={ProfilesStackNavigator}
         options= {{
           tabBarIcon : ({focused}) => {
@@ -76,7 +79,8 @@ const BottomTabNavigator = () => {
               <View>
                 <FontAwesome5 
                   name="user"
-                  size={24} color={ focused ?"black" : colors.lightblue} />
+                  size={24} 
+                  color={ focused ?"black" : colors.lightblue} />
               </View>
             )
           }
@@ -84,13 +88,14 @@ const BottomTabNavigator = () => {
       />
     </Tab.Navigator>
   )
-}
+};
 
 export default BottomTabNavigator;
 
 const styles = StyleSheet.create({
   tabBar:{
     backgroundColor: colors.blue300,
-    width:360
+    width:360,
+    color: colors.blue700
   }
 })
